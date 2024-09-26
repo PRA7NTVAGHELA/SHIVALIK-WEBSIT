@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@200;300&display=swap"
+    rel="stylesheet">
+</head>
+
+<style>
+  body {
+    /* background: linear-gradient(141deg, #98cbebbf 0%, #5fd0dcd0 51%, #d9e8ed 75%); */
+    background-color: aliceblue;
+  }
+
+  .card {
+    padding: 5px;
+    margin: 25px;
+    background-color: aliceblue;
+    color: rgba(6, 6, 29, 0.838);
+    border-radius: 10px;
+    border: 1px solid white;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+
+
+  .card-body {
+    padding: 18px;
+    margin: 5px;
+    /* border-radius: 10px; */
+    background-image: linear-gradient(to right, #b6fbff, #83a4d4);
+  }
+
+  .card:hover {
+    background-color: dodgerblue;
+    color: black;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #2c3e50, #4ca1af);
+    transform: scale(1.05);
+    transition: 0.7s ease;
+    flex: 1;
+
+  }
+
+  .container2 {
+    /* margin: 10px; */
+    padding: 20px;
+    /* background-color: white; */
+    background: linear-gradient(141deg, #98cbebbf 0%, #c1f0ff 65%, #b1def5 10%);
+
+    border-radius: 15px;
+
+  }
+
+  .navbar {
+    margin: auto;
+    padding: auto;
+  }
+
+  .container3 {
+    margin: 10px;
+    padding: 10px;
+
+  }
+
+  .collapse navbar-collapse text-center {
+    background-color: rebeccapurple;
+    justify-content: space-around;
+  }
+
+  .nav-item {
+    padding-right: 50px;
+    font-size: 20px;
+  }
+
+  .card-text {
+    text-align: justify;
+  }
+
+  .row-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    /* Add margin to the right of the entire row */
+  }
+
+  .row-container img {
+    height: 180px;
+    width: 80px;
+    margin-right: 20px;
+    /* Add margin to the right of the image */
+  }
+
+  .row-container h1,
+  .row-container p {
+    font-family: 'Bebas Neue', 'sans-serif', 'Dosis', sans-serif;
+    margin: 0;
+  }
+
+  .row-container .span {
+    font-family: 'Bebas Neue', 'sans-serif', 'Dosis', sans-serif;
+
+
+    margin-left: 10px;
+
+    /* Add margin to the left of the h1 element */
+  }
+
+  span {
+    font-size: 79px;
+    color: black;
+  }
+
+  .row-container p {
+    font-size: 40px;
+    /* font-weight: bold; */
+    font-weight: lighter;
+    margin-left: 10px;
+    line-height: 0.9;
+    color: gray;
+    text-align: center;
+    justify-content: center;
+    /* Add margin to the left of the h2 element */
+  }
+
+
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 768px) {
+    .row-container {
+      flex-direction: row;
+      align-items: center;
+      text-align: center;
+      margin: 20px;
+    }
+
+    .row-container img {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+
+    .row-container h1 {
+      font-size: 60px;
+      margin-left: 0;
+      margin-bottom: 0px;
+    }
+
+    .row-container p {
+      font-size: 30px;
+      margin-left: 0;
+      margin-top: 0px;
+    }
+  }
+</style>
+
+<body>
+  <div class="row-container">
+    <img src="logomain (1).png" alt="">
+    <div>
+      <p><span>SHIVALIK</span></p>
+      <p>INFRASTRUCTURE</p>
+    </div>
+  </div>
+  <div class="d-flex justify-content-around">
+
+    <nav class="navbar navbar-expand-lg bg-body-linear-gradient(141deg, #70ccfd 0%, #5fd0dcd0 51%, #d9e8ed 75%);">
+      <div class="container-fluid">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+            <li class="nav-item">
+              <a class="btn btn-outline-dark" aria-current="page" href="index1 (1).html"><b>Home</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-dark" href="index2 (1).html"><b>Portfolio</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-dark" href="index3 (1).html"><b>Our services</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-dark" href="index4 (2).html"><b>About Us</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-dark" href="index5 (2).html"><b>Contact Us</b></a>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+
+    </nav>
+  </div>
+
+
+
+  <br>
+
+  <!-- photo animate -->
+
+  <h1 class="text-center">Our featured projects</h1>
+
+  <div class="container2">
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="image3.jpg" width="100%" height="600px" class="d-block w-100" alt="...">
+
+        </div>
+        <div class="carousel-item">
+          <img src="img3 (1).jpg" width="100%" height="600px" class="d-block w-100" alt="...">
+
+        </div>
+        <div class="carousel-item">
+          <img src="img4 (1).jpg" width="100%" height="600px" class="d-block w-100" alt="...">
+
+        </div>
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <br>
+    <hr>
+
+
+    <!-- vector images and its names -->
+
+    <div class="container3">
+      <div class="card-group">
+        <div class="card">
+          <img class="card-img-top" src="img7 (1).jpg" height="400px" width="100px" title="pipeline icons"></a>
+          <div class="card-body">
+            <h5 class="card-title"><strong>PIPELINE</strong></h5>
+            <p class="card-text">SI’s has well and satisfactorily laid more than 100 KM (Kilo-Meter) of
+              pipeline in
+              different city and state including MS Pipe, DI Pipe, CI Pipe, PVC pipe, UPVC pipe, CPVC
+              pipe, HDPE
+              pipe and AC Pressure pipe.
+              <br>Currently we have major projects allied Water Supply of Nal SE JAL by Gov. of Gujarat.
+            </p>
+          </div>
+
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="img6 (1).jpg" height="400px" width="100px" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title"><strong>BUILDING WORK</strong>
+            </h5>
+            <p class="card-text">SI’s has satisfactorily completed more than 50 building including
+              commercial,
+              residential, industrial, and educational. <br>
+
+              We have experience in all sectors in building work with the help of qualified and
+              experienced
+              Project Managers, Civil – Mechanical – Electrical Engineers, and Skilled Labour.
+            </p>
+          </div>
+
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="img8 (1).png" height="400px" width="100px" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title"><strong>ROAD</strong>
+            </h5>
+            <p class="card-text">SI’s has satisfactorily completed high quality transportation
+              infrastructure, SI’s
+              has a prime vision of creating dominant high quality transportation infrastructures around
+              in India.
+              <br>
+
+              We have comprehensively experience in RCC, CC, Trimix, Asphalt and Bitumen and many more.
+
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="card-group">
+        <div class="card">
+          <img class="card-img-top" src="dam.jpg" height="400px" width="50px" title="pipeline icons"></a>
+          <div class="card-body">
+            <h5 class="card-title">DAM</h5>
+            <p class="card-text">We have satisfactorily experienced in Dam and Check dams. SI’s have
+              experience and well versed in swimming pool structure, design and construction for the
+              construction of Dam and Check Dam.
+            </p>
+          </div>
+
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="pool.jpg" height="400px" width="50px" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">SWIMMING POOL
+            </h5>
+            <p class="card-text">SI's has satisfactorily completed swimming pools under government scheme.
+              we have well versed in swimming pool structure, design and construction.
+            </p>
+          </div>
+
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="front.jpg" height="400px" width="50px" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">RIVER FRONT
+            </h5>
+            <p class="card-text">SI's has satisfactorily completed River front construction and
+              beautification work, we create public spaces to let residents enjoy the riverfront and its
+              surrounds. These include parks, walkways, and spaces to host festivals, firework displays,
+              and concerts.
+
+            </p>
+          </div>
+          <!-- <button type="button" class="btn btn-info">Info</button> -->
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container3">
+      <div class="card-group">
+        <div class="card">
+          <img class="card-img-top" src="STP.jpeg" height="400px" width="100px" title="pipeline icons"></a>
+          <div class="card-body">
+            <h5 class="card-title"><strong>Sewage Treatment Plant (STP)</strong></h5>
+            <p class="card-text">Si’s has satisfactorily completed STP with capacity of 2 MLD to 50 MLD
+              at different places of Gujarat and more than 5 years of operation and maintenance has
+              completed. Treated Sewage water is purified and maintained as per the Pollution control
+              board norms.
+            </p>
+          </div>
+
+        </div>
+
+
+        <!-- <div class="card">
+          <img class="card-img-top" src="img6 (1).jpg" height="400px" width="100px" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title"><strong>BUILDING WORK</strong>
+            </h5>
+            <p class="card-text">SI’s has satisfactorily completed more than 50 building including
+              commercial,
+              residential, industrial, and educational. <br>
+
+              We have experience in all sectors in building work with the help of qualified and
+              experienced
+              Project Managers, Civil – Mechanical – Electrical Engineers, and Skilled Labour.
+            </p>
+          </div>
+
+        </div> -->
+
+
+        <div class="card">
+          <img class="card-img-top" src="WTP1.png" height="400px" width="100px" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title"><strong>Water Treatment Plant (WTP)</strong>
+            </h5>
+            <p class="card-text">Si’s has satisfactorily completed WTP with capacity of 2 MLD to 30 MLD
+              at different places of Gujarat and more than 5 years of operation and maintenance has
+              completed. In WTP Water treatment removes contaminants and undesirable components, or
+              reduces their concentration so that the water becomes fit for its desired end-use. This
+              treatment is crucial to human health and allows humans to benefit from both drinking and
+              irrigation use.
+
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <br>
+    <hr>
+    <!-- card section  -->
+
+    <!-- <section class="">
+      <div class="card-group">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><strong>No. 1 <br></strong>Ghed Remodeling work with MS and DI pipeline</h5>
+            <p class="card-text">Location: Ghed - Ranavav <br>
+              Department: GWSSB <br>
+              Amount: 55699155.00 RS.</p>
+          </div>
+
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><strong>No. 2 <br></strong>2341/58W.S.S.49 General Water Supply under lalpur group
+              N.C.21 Panch
+              devda to
+              Khatiya Pipeline Work.
+            </h5>
+            <p class="card-text">Location: Panchdevda <br>
+              Department: GWSSB <br>
+              Amount: 3,52,15,827.13 RS.
+            </p>
+          </div>
+
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><strong>No. 3 <br></strong>Water Pipeline work At ward No.13
+            </h5>
+            <p class="card-text">Location: junagadh Ward No.13 <br>
+              Department: Junagadh Municipal Corporation (JMC) <br>
+              Amount: 2,72,49,998.91 RS.
+
+            </p>
+          </div>
+
+        </div>
+      </div>
+      <br>
+
+      <div class="card-group">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><strong>No. 4 <br></strong>Work order for Providing, Supplying & Laying D.I gravity
+              main
+              pipeline construction of
+              Pump house and Miscellaneous repairing work in Ghed 2/3 RWSS
+            </h5>
+            <p class="card-text">Location: Ghed <br>
+              Department: GWSSB <br>
+              Amount: 2,57,48,182.92 RS.
+            </p>
+          </div>
+
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><strong>No. 5 <br></strong>Construction Of 22 Additional Classrooms in Devbhumi
+              Dwarka
+            </h5>
+            <p class="card-text">Location: Devbhumi Dwarka <br>
+              Department: Sarva Siksha Abhiyan (SSA) <br>
+              Amount:2,41,05,350.13 RS.
+
+            </p>
+          </div>
+
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><strong>No. 6 <br></strong>Construction Of Water supply Network at SRP Gr-17 Campus,
+              Chela
+            </h5>
+            <p class="card-text">Location: Dist-JamnagarChela <br>
+              Department:GSPHCL <br>
+              Amount: 2,24,72,123.12 RS.
+
+
+            </p>
+          </div>
+
+        </div>
+      </div>
+      <br>
+
+      <div class="card-group">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><strong>No. 7 <br></strong>Construction of Kuvadva Police Station With Electricity
+              Under DGP
+              Priority Year 2016-17
+            </h5>
+            <p class="card-text">Location: Kuvadva, Rajkot <br>
+              Department:GSPHCL <br>
+              Amount: 2,19,46,083.69 RS. </p>
+          </div>
+
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><strong>No. 8 <br></strong>Construction of Rajkot B-Division Police Station With
+              Electricity
+              Under DGP Priority
+              Year
+              2016-17
+
+            </h5>
+            <p class="card-text">Location: Rajkot <br>
+              Department:GSPHCL <br>
+              Amount: 1,99,58,978.40 RS.
+            </p>
+          </div>
+
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><strong>No. 9 <br></strong>Water Pipeline work At ward No.15
+
+            </h5>
+            <p class="card-text">Location: junagadh Ward No.15 <br>
+              Department: Junagadh Municipal Corporation (JMC) <br>
+              Amount: 1,54,98,049.46 RS.
+
+
+            </p>
+          </div>
+
+        </div>
+      </div>
+      <br>
+
+      <div class="card-group">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><strong>No. 10 <br></strong>Planning, Designing & Commissioning of Swimming Pool With
+              all
+              allied works with 3 years
+              of operation & Maintenance in Ward No-9
+            </h5>
+            <p class="card-text">Location: Rajkot <br>
+              Department: Rajkot Municipal Corporation (RMC) <br>
+              Amount: 1,53,73,234.00 RS. </p>
+          </div>
+
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><strong>No. 11 <br></strong>Water Pipeline work At ward No.1 Rajkot
+
+            </h5>
+            <p class="card-text">Location: Rajkot <br>
+              Department:Rajkot Municipal Corporation (RMC) <br>
+              Amount: 1,17,11,250.00 RS.
+            </p>
+          </div>
+
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><strong>No. 12 <br></strong>Junagadh PTC Campus Underground sump, Over Head Tank &
+              Water Supply
+              Network work
+
+            </h5>
+            <p class="card-text">Location: Junagadh <br>
+              Department:GSPHCL <br>
+              Amount: 97,80,012.36 RS.
+
+
+            </p>
+          </div>
+
+        </div>
+      </div>
+      <br>
+
+      <div class="card-group">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><strong>No. 13 <br></strong>Work for Construction of under ground Sump Over Head Tank
+              Sewage
+              Treatment
+              Plant,External
+              water Supply,Drainge Network & Rain water Drainage at new Jail Jitnagar-Rajpipla Dist
+            </h5>
+            <p class="card-text">Location: Rajpipla <br>
+              Department: GSPHCL <br>
+              Amount: 1,03,21,772.97 RS.
+            </p>
+          </div>
+
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><strong>No. 14 <br></strong>Work for Lowering ,Laying & Jointing 450mm dia. DI K7
+              Gravity Pipe
+              line from Ghee Dam
+              head work to Jodhpur Gate at Khambhaliya under 13th finance commission Grant
+            </h5>
+            <p class="card-text">Location: Jam-Khambhaliya <br>
+              Department:Khambhaliya Nagarpalika <br>
+              Amount: 10,39,457.75 RS.
+
+            </p>
+          </div>
+
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><strong>No. 15 <br></strong>Construction of 21 Additional Classrooms in Surat & Tapi
+              District.Pkg
+              No-SSA/ACR/SRT/TAPI/1528
+
+            </h5>
+            <p class="card-text">Location: Surat - Tapi <br>
+              Department:Sarva Siksha Abhiyan (SSA) <br>
+              Amount: 1,76,57,735.00 RS.
+
+
+            </p>
+          </div>
+
+        </div>
+      </div>
+      <br>
+
+      <div class="card">
+        <div class="card-body card-primary card-align-center">
+          <h5 class="card-title"><strong>No. 16 <br></strong>Construction Of 6 Staff Quarters in Tapi District -Pkg
+            No-DIR/TAPI/1497
+          </h5>
+          <p class="card-text1">Location: Tapi <br>
+            Department:Sarva Siksha Abhiyan (SSA) <br>
+            Amount: 74,99,475.20 RS.</p>
+        </div>
+      </div>
+
+      <br> -->
+    <!-- work on hand here  -->
+
+    <!-- <div class="d-grid gap-2">
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+          <div class="d-grid gap-2 col-6 mx-auto">WORK ON HAND</div>
+        </button>
+
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+          aria-labelledby="offcanvasWithBothOptionsLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"><strong>1</strong>. Salaya town Nal se jal
+              Project -2nd call <br> Place: <strong>Salaya Nagarpalika</strong>.
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"><strong>2</strong>. Providing, Supplying,
+              Lowering,
+              Laying , jointing testing & Commissioning of pipeline , Pumping Machinery with operation & maintainance
+              for 1
+              YRS. for rapar city supply scheme <br>Place: <strong>TALUKA -RAPAR</strong> district
+              <strong>KACHCHH</strong> under 'NAL-SE-JAL' program
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"><strong>3</strong>. Bid Documents for Working
+              survey ,Designing, Build & Providing supplying Incl. Lowering laying jointing pipeline & SITC of Pumping
+              Machinery incl. Testing and Commissioning with 1 year O&M under Bantva Town Water Supply Scheme <br>
+              Place: <strong>Dist, Junagadh</strong>.
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+
+        </div>
+      </div>
+
+      <br> -->
+
+    <!-- <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-outline-success" type="button">Few Works in Progress</button>
+      </div>
+
+    </section>
+
+    <br> -->
+
+
+    <!-- website footer -->
+
+
+    <br>
+
+    <div class="shortcode-html">
+      <h2 class="text-center">Get in touch</h2> <br>
+      <!-- Contact Info -->
+      <div class="row no-gutters g-color-white text-center g-mb-80">
+        <div class="col-md-6 col-lg-3 g-bg-primary-dark-v3 g-py-60">
+          <span class="u-icon-v1 u-icon-size--xl g-color-white g-mb-10">
+            <i class="icon-map"></i>
+          </span>
+          <em
+            class="d-block g-font-size-12 text-uppercase g-font-style-normal g-color-white-opacity-0_8 g-mb-5">Address</em>
+          <strong class="d-block g-font-size-16">Rajkot , Gujrat</strong>
+        </div>
+
+        <div class="col-md-6 col-lg-3 g-bg-primary-dark-v2 g-py-60">
+          <span class="u-icon-v1 u-icon-size--xl g-color-white g-mb-10">
+            <i class="icon-screen-smartphone"></i>
+          </span>
+          <em class="d-block g-font-size-12 text-uppercase g-font-style-normal g-color-white-opacity-0_8 g-mb-5">Phone
+            Number</em>
+          <strong class="d-block g-font-size-16">+91 9909999039</strong>
+        </div>
+
+        <div class="col-md-6 col-lg-3 g-bg-primary-dark-v3 g-py-60">
+          <span class="u-icon-v1 u-icon-size--xl g-color-white g-mb-10">
+            <i class="icon-envelope-letter"></i>
+          </span>
+          <em
+            class="d-block g-font-size-12 text-uppercase g-font-style-normal g-color-white-opacity-0_8 g-mb-5">Email</em>
+          <strong class="d-block g-font-size-16">
+            <a href="#!" class="g-color-white g-color-white--hover">Shivalikinfrastructure09@gmail.com</a>
+          </strong>
+        </div>
+
+        <div class="col-md-6 col-lg-3 g-bg-primary-dark-v2 g-py-60">
+          <span class="u-icon-v1 u-icon-size--xl g-color-white g-mb-10">
+            <i class="icon-call-in"></i>
+          </span>
+          <em class="d-block g-font-size-12 text-uppercase g-font-style-normal g-color-white-opacity-0_8 g-mb-5">Feel
+            free to</em>
+          <strong class="d-block g-font-size-16">
+            <a href="index5.html" class="g-color-white g-color-white--hover">Contact Us</a>
+          </strong>
+        </div>
+      </div>
+      <!-- End Contact Info -->
+      <br>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>

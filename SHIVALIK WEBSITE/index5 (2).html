@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact us</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@200;300&display=swap"
+    rel="stylesheet">
+  <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+
+
+</head>
+<style>
+  body {
+
+
+
+    background-image: linear-gradient(95.2deg, rgba(173, 252, 234, 1) 26.8%, rgba(192, 229, 246, 1) 64%);
+
+
+
+  }
+
+  .container1 {
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .w-100:hover {
+    transform: scale(1.05);
+    transition: 0.7s ease;
+    flex: 1;
+  }
+
+  .nav-item {
+    padding-right: 50px;
+    font-size: 20px;
+  }
+
+
+
+  .contact_us * {
+    font-family: Nunito, sans-serif;
+  }
+
+  .contact_us a {
+    text-decoration-line: none;
+    text-decoration-thickness: initial;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+  }
+
+  .contact_us .text-blk {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    line-height: 25px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+  }
+
+  .contact_us input:focus {
+    outline-color: initial;
+    outline-style: none;
+    outline-width: initial;
+  }
+
+  .contact_us textarea:focus {
+    outline-color: initial;
+    outline-style: none;
+    outline-width: initial;
+  }
+
+  .contact_us .responsive-cell-block {
+    min-height: 75px;
+  }
+
+  .contact_us .responsive-container-block {
+    min-height: 75px;
+    height: fit-content;
+    width: 100%;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    justify-content: flex-start;
+  }
+
+  .contact_us .responsive-container-block.bigContainer {
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+  }
+
+  .contact_us .responsive-container-block.Container {
+    max-width: 1320px;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-left: auto;
+  }
+
+  .contact_us .responsive-cell-block.wk-desk-7.wk-ipadp-8.wk-tab-12.wk-mobile-12 {
+    background-color: #333333;
+    padding-top: 30px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+  }
+
+  .contact_us .text-blk.heading {
+    color: white;
+    font-size: 35px;
+    line-height: 48px;
+    font-weight: 800;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+    margin-left: 0px;
+  }
+
+  .contact_us #message {
+    width: 100%;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+  }
+
+  .contact_us .emailArea {
+    width: 49%;
+  }
+
+  .contact_us .firstRow {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  .contact_us .fullNameArea {
+    width: 49%;
+  }
+
+  .contact_us .cardHead {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    color: white;
+  }
+
+  .contact_us .submit {
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat: initial;
+    background-repeat: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: #00b2eb;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .contact_us .formTable {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact_us .messageArea {
+    width: 100%;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+    margin-left: 0px;
+  }
+
+  .contact_us .fullName {
+    width: 100%;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+  }
+
+  .contact_us .email {
+    width: 100%;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+  }
+
+  @media (max-width: 1024px) {
+    .contact_us .firstRow {
+      flex-direction: column;
+    }
+
+    .contact_us .fullNameArea {
+      width: 100%;
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 30px;
+      margin-left: 0px;
+    }
+
+    .contact_us .emailArea {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .contact_us .responsive-container-block.bigContainer {
+      padding-top: 10px;
+      padding-right: 20px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+    }
+
+    .contact_us .responsive-container-block.Container {
+      padding-top: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+    }
+
+    .contact_us .responsive-cell-block.wk-desk-7.wk-ipadp-8.wk-tab-12.wk-mobile-12 {
+      padding-top: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+    }
+  }
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap');
+
+  *,
+  *:before,
+  *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .wk-desk-1 {
+    width: 8.333333%;
+  }
+
+  .wk-desk-2 {
+    width: 16.666667%;
+  }
+
+  .wk-desk-3 {
+    width: 25%;
+  }
+
+  .wk-desk-4 {
+    width: 33.333333%;
+  }
+
+  .wk-desk-5 {
+    width: 41.666667%;
+  }
+
+  .wk-desk-6 {
+    width: 50%;
+  }
+
+  .wk-desk-7 {
+    width: 58.333333%;
+  }
+
+  .wk-desk-8 {
+    width: 66.666667%;
+  }
+
+  .wk-desk-9 {
+    width: 75%;
+  }
+
+  .wk-desk-10 {
+    width: 83.333333%;
+  }
+
+  .wk-desk-11 {
+    width: 91.666667%;
+  }
+
+  .wk-desk-12 {
+    width: 100%;
+  }
+
+  @media (max-width: 1024px) {
+    .wk-ipadp-1 {
+      width: 8.333333%;
+    }
+
+    .wk-ipadp-2 {
+      width: 16.666667%;
+    }
+
+    .wk-ipadp-3 {
+      width: 25%;
+    }
+
+    .wk-ipadp-4 {
+      width: 33.333333%;
+    }
+
+    .wk-ipadp-5 {
+      width: 41.666667%;
+    }
+
+    .wk-ipadp-6 {
+      width: 50%;
+    }
+
+    .wk-ipadp-7 {
+      width: 58.333333%;
+    }
+
+    .wk-ipadp-8 {
+      width: 66.666667%;
+    }
+
+    .wk-ipadp-9 {
+      width: 75%;
+    }
+
+    .wk-ipadp-10 {
+      width: 83.333333%;
+    }
+
+    .wk-ipadp-11 {
+      width: 91.666667%;
+    }
+
+    .wk-ipadp-12 {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .wk-tab-1 {
+      width: 8.333333%;
+    }
+
+    .wk-tab-2 {
+      width: 16.666667%;
+    }
+
+    .wk-tab-3 {
+      width: 25%;
+    }
+
+    .wk-tab-4 {
+      width: 33.333333%;
+    }
+
+    .wk-tab-5 {
+      width: 41.666667%;
+    }
+
+    .wk-tab-6 {
+      width: 50%;
+    }
+
+    .wk-tab-7 {
+      width: 58.333333%;
+    }
+
+    .wk-tab-8 {
+      width: 66.666667%;
+    }
+
+    .wk-tab-9 {
+      width: 75%;
+    }
+
+    .wk-tab-10 {
+      width: 83.333333%;
+    }
+
+    .wk-tab-11 {
+      width: 91.666667%;
+    }
+
+    .wk-tab-12 {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .wk-mobile-1 {
+      width: 8.333333%;
+    }
+
+    .wk-mobile-2 {
+      width: 16.666667%;
+    }
+
+    .wk-mobile-3 {
+      width: 25%;
+    }
+
+    .wk-mobile-4 {
+      width: 33.333333%;
+    }
+
+    .wk-mobile-5 {
+      width: 41.666667%;
+    }
+
+    .wk-mobile-6 {
+      width: 50%;
+    }
+
+    .wk-mobile-7 {
+      width: 58.333333%;
+    }
+
+    .wk-mobile-8 {
+      width: 66.666667%;
+    }
+
+    .wk-mobile-9 {
+      width: 75%;
+    }
+
+    .wk-mobile-10 {
+      width: 83.333333%;
+    }
+
+    .wk-mobile-11 {
+      width: 91.666667%;
+    }
+
+    .wk-mobile-12 {
+      width: 100%;
+    }
+  }
+
+  .row-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    /* Add margin to the right of the entire row */
+  }
+
+  .row-container img {
+    height: 180px;
+    width: 80px;
+    margin-right: 20px;
+    /* Add margin to the right of the image */
+  }
+
+  .row-container h1,
+  .row-container p {
+    font-family: 'Bebas Neue', 'sans-serif', 'Dosis', sans-serif;
+    margin: 0;
+  }
+
+  .row-container .span {
+    font-family: 'Bebas Neue', 'sans-serif', 'Dosis', sans-serif;
+
+
+    margin-left: 10px;
+
+    /* Add margin to the left of the h1 element */
+  }
+
+  span {
+    font-size: 79px;
+    color: #000;
+  }
+
+  .row-container p {
+    font-size: 40px;
+    /* font-weight: bold; */
+    /* font-weight: lighter; */
+    font-weight: normalsss;
+    margin-left: 10px;
+    line-height: 0.9;
+    color: gray;
+    text-align: center;
+    justify-content: center;
+    /* Add margin to the left of the h2 element */
+  }
+
+
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 768px) {
+    .row-container {
+      flex-direction: row;
+      align-items: center;
+      text-align: center;
+      margin: 20px;
+    }
+
+    .row-container img {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+
+    .row-container h1 {
+      font-size: 60px;
+      margin-left: 0;
+      margin-bottom: 0px;
+    }
+
+    .row-container p {
+      font-size: 30px;
+      margin-left: 0;
+      margin-top: 0px;
+    }
+  }
+</style>
+
+<body>
+  <div class="row-container">
+    <img src="logomain (1).png" alt="">
+    <div>
+      <p><span>SHIVALIK</span></p>
+      <p>INFRASTRUCTURE</p>
+    </div>
+  </div>
+  </figure>
+  <!-- navigration bar -->
+  <div class="nav justify-content-center">
+    <nav class="navbar navbar-expand-lg bg-body-linear-gradient(141deg, #98cbebbf 0%, #5fd0dcd0 51%, #d9e8ed 75%);">
+      <div class="container-fluid">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+            <li class="nav-item">
+              <a class="btn btn-outline-dark" aria-current="page" href="index1 (1).html"><b>Home</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-dark" href="index2 (1).html"><b>Portfolio</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-dark" href="index3 (1).html"><b>Our services</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-dark" href="index4 (2).html"><b>About Us</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-dark" href="index5 (2).html"><b>Contact Us</b></a>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </div>
+  <br>
+
+
+  <br>
+
+  <div class="row g-0 bg-body-linear-gradient(141deg, #98cbebbf 0%, #b1ffffd0 51%, #d9e8ed 75%) position-relative">
+    <div class="col-md-6 mb-md-0 p-md-4">
+      <img src="officepic (2).jpg" height="400px" class="w-100" alt="img">
+    </div>
+
+    <div class="col-md-6 p-4 ps-md-0">
+      <h3 class="mt-0">Office address</h3>
+      <h4>4, Mani Nagar, Mavdi Plot, Near Ashok Machine Tools, Rajkot - 360 004. Gujarat - India</h4>
+    </div>
+  </div>
+
+  <!--scrolling -->
+  <div class="d-grid gap-2">
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+      aria-controls="offcanvasWithBothOptions">
+      <div class="d-grid gap-2 col-6 mx-auto">Office Timing</div>
+    </button>
+
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+      aria-labelledby="offcanvasWithBothOptionsLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Opening Hours</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <p>MONDAY - SATURDAY 09:00 - 19:00</p>
+      </div>
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Closing Days</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <p>SUNDAY CLOSED</p>
+      </div>
+    </div>
+  </div>
+  <!-- scrolling end -->
+  <br>
+
+  <!-- website footer  -->
+
+
+  <div class="container1">
+
+    <div class="contact_us">
+      <div class="responsive-container-block bigContainer">
+          <div class="responsive-container-block Container">
+              <div class="responsive-cell-block wk-desk-5 wk-ipadp-4 wk-tab-12 wk-mobile-12">
+                  <h4><strong>Get in touch</strong></h4>
+                  <br>
+                  <p>TEL: +91 9909999039</p>
+                  <p>EMAIL: info@shivalikinfrastructure09.com</p>
+                  <br>
+                  <p>© 2023 by Shivalikinfrastructure. All Rights Reserved. <br> Terms and Conditions.</p>
+              </div>
+              <div class="responsive-cell-block wk-desk-7 wk-ipadp-8 wk-tab-12 wk-mobile-12">
+                  <p class="text-blk heading">Contact US</p>
+                  <!-- Contact form -->
+                  <form onsubmit="sendEmail(); return false;" class="formTable" id="izml">
+                      <div class="firstRow">
+                          <div class="fullNameArea">
+                              <p class="cardHead">Full Name</p>
+                              <input class="fullName" id="fullName" name="fullName" type="text">
+                          </div>
+                          <div class="emailArea">
+                              <p class="cardHead">Email Address</p>
+                              <input class="email" id="email" name="email" type="text">
+                          </div>
+                      </div>
+                      <div class="messageArea">
+                          <p class="cardHead">Message</p>
+                          <textarea class="message" cols="30" id="message" name="message" rows="10"></textarea>
+                      </div>
+                      <!-- Add a button to submit the form -->
+                      <button type="submit" class="submit">Send Message</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <script>
+      // Function to send an email using SMTP.js
+      // function sendEmail() {
+      //     Email.send({
+      //         Host: "smtp.your-email-provider.com", // Replace with your email provider's SMTP server
+      //         Username: "your-email@example.com",    // Your email address
+      //         Password: "your-email-password",       // Your email password
+      //         To: "recipient@gmail.com",             // Recipient's email address (Gmail in this case)
+      //         From: document.getElementById("email").value,
+      //         Subject: "Contact Form Submission",
+      //         Body: "Name: " + document.getElementById("fullName").value + "<br>Email: " + document.getElementById("email").value + "<br>Message: " + document.getElementById("message").value,
+      //     }).then(function (message) {
+      //         if (message === "OK") {
+      //             alert("Email sent successfully!");
+      //             resetForm(); // Reset the form
+      //         } else {
+      //             alert("Email not sent. Please try again later.");
+      //         }
+      //     });
+      // }
+
+      // Function to reset the form
+      function resetForm() {
+          document.getElementById("izml").reset();
+      }
+  </script>
+
+    <br>
+    <!-- animation -->
+
+    <!-- animation -->
+    <!-- <div class="contact_us">
+      <div class="responsive-container-block bigContainer">
+        <div class="responsive-container-block Container">
+          <div class="responsive-cell-block wk-desk-5 wk-ipadp-4 wk-tab-12 wk-mobile-12">
+            <h4><strong>Get in touch</strong></h4>
+            <br>
+            <p>TEL: +91 9909999039</p>
+            <p>EMAIL: info@shivalikinfrastructure09.com</p>
+            <br>
+            <p>© 2023 by Shivalikinfrastructure. All Rights Reserved. <br>
+              Terms and Conditions.</p>
+          </div>
+          <div class="responsive-cell-block wk-desk-7 wk-ipadp-8 wk-tab-12 wk-mobile-12">
+            <p class="text-blk heading">
+              Contact US
+            </p>
+
+            <form onsubmit="sendEmail(); reset(); return false;" class="formTable" id="izml">
+              <div class="firstRow">
+                <div class="fullNameArea">
+                  <p class="cardHead">
+                    Full Name
+                  </p>
+                  <input class="fullName" id="fullName" name="fullName" type="text">
+                </div>
+                <div class="emailArea">
+                  <p class="cardHead">
+                    Email Address
+                  </p>
+                  <input class="email" id="email" name="email" type="text">
+                </div>
+              </div>
+              <div class="messageArea">
+                <p class="cardHead">
+                  Message
+                </p>
+                <textarea class="message" cols="30" id="message" name="message" rows="10"></textarea>
+              </div>
+              <a class="submit" href="#" id="w-c-s-bgc_p-1-dm-id-4">
+                Send Message
+              </a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+
+
+
+  </div>
+  <br>
+  <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+  <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+
+  <!-- <script>
+    function sendEmail(){
+      Email.send({
+        Host: "smtp.gmail.com",
+        Username: "sandeeptiloksni@gmail.com",
+        Password: "haridarshan@29",
+        To: '190303108052@paruluniversity.ac.in',
+        From: document.getElementById("Email").value,
+        Subject: "This is the subject",
+        Body: "Name"
+      }).then(
+        message => alert(message)
+      );
+    }
+  </script> -->
+
+  <script>
+  function sendEmail() {
+    Email.send({
+      Host: "smtp.gmail.com", // Replace with your email provider's SMTP server
+      Username: "sandeeptilokani077@gmail.com", // Your email address
+      Password: "***********", // Your email password
+      To: "190303108052@paruluniversity.ac.in", // Recipient's email address (Gmail in this case)
+      From: document.getElementById("email").value,
+      Subject: "Contact Form Submission",
+      Body: "Name: " + document.getElementById("fullName").value + "<br>Email: " + document.getElementById("email").value +
+      "<br>Message: " + document.getElementById("message").value,
+    }).then(function (message) {
+      if (message === "OK") {
+        alert("Email sent successfully!");
+        reset(); // Reset the form
+      } else {
+        alert("Email not sent. Please try again later.");
+      }
+    });
+  }
+  
+  </script>
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
